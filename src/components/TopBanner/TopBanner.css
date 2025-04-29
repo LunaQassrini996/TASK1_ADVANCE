@@ -1,0 +1,73 @@
+.Banner{
+    width:99.9440%;
+    border: 2px solid var(--Gray15);
+    border-radius: 8px;
+    background-color: var(--LightOrange);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+    span{
+        text-align: center;
+        font-family: "Outfit", sans-serif;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 14px;
+        font-weight: 500;
+        line-height: 150%;
+    }
+    .arrow{
+       font-size:30px;
+       position: absolute;
+       right:37%;
+    }
+    :nth-child(2){
+        width:72.35px;
+        position: absolute;
+        top: 0px;
+        left: 22%;
+    }
+    :nth-child(5){
+        width: 39.56px;
+        position: absolute;
+        bottom: 0px;
+        right: 20%;
+    }
+    img{
+        width:201px;
+    }
+    
+}
+@media(max-width:1440px){
+    .Banner{
+        span{
+            font-size: 16px;
+        }
+    }
+}
+@media(max-width:992px){
+    .Banner{
+        overflow: hidden;
+        span{
+            font-size: 14px;
+        }:nth-child(1) ,:nth-child(6){
+            width: 50px;
+            height: 50px;
+        }:nth-child(2){
+            width:32.56px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }:nth-child(5){
+            width:50.37px;
+            position: absolute;
+            bottom: 0px;
+            right: -2%;
+        } .arrow{
+            display: none;
+         }
+    }
+}

@@ -1,0 +1,230 @@
+.hero-container {
+     padding: 80px 8.4375% 200px 8.4375%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap:60px;
+  
+     .img-container {
+         margin-top: 200px;
+         width: 47.92%;
+         border: 2px solid var(--Gray15);
+         position: relative;
+         background-color: var(--Orange80);
+         :nth-child(1){
+            width:100%;
+         }
+         :nth-child(2) {
+            width: 80%;
+             position: absolute;
+             top: 11%;
+             left: 11%;
+         }
+
+         .shape {
+             border: 2px solid var(--Gray15);
+             background-color: var(--White);
+             position: absolute;
+             width: 20px;
+             height: 20px;
+             border-radius: 50%;
+         }
+
+         .top-left {
+             left: -1.4%;
+             top: -1%;
+         }
+
+         .top-right {
+             right: -1.4%;
+             top: -1%;
+         }
+
+         .bottom-left {
+             left: -1.4%;
+             bottom: -1%;
+         }
+
+         .bottom-right {
+             right: -1.4%;
+             bottom: -1%;
+         }
+
+     }
+
+     .right-section {
+        margin-top: 100px;
+        width: 47.92%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items:start;
+        gap: 60px;
+         .titles-container {
+             .mini-title {
+                 font-family: "Outfit", sans-serif;
+                 font-size: 22px;
+                 font-weight: 500;
+                 line-height: 150%;
+                 border-bottom: 2px solid var(--Gray15);
+                 width: 357px;
+             }
+             .Luna-title{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+
+                h1 {
+                    font-family: "Raleway", sans-serif;
+                    font-size: 54px;
+                    font-weight: 800;
+                    color: var(--Gray10);
+                    line-height: 130%;
+       
+                    span {
+                        color: var(--Orange65)
+                    }
+                }
+   
+                p {
+                    font-family: "Outfit", sans-serif;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 150%;
+                }
+             }
+
+
+         }
+
+         .information {
+            /* width: 47.92%; */
+             padding: 24px 50px;
+             border: 2px solid var(--Gray15);
+             background-color: var(--Orange95);
+             box-shadow: 8px 8px 0px 1px rgba(255, 190, 153, 1);
+             border-radius: 12px;
+             display: flex;
+             justify-content: start;
+             align-items:center;
+            gap: 13px;
+             .info {
+                 .title-num {
+                     font-family: "Outfit", sans-serif;
+                     font-size: 44px;
+                     font-weight: 800;
+                     line-height: 150%;
+
+                 }p{
+                    font-family: "Outfit", sans-serif;
+                    font-size: 18px;
+                    font-weight:500 ;
+                    line-height: 150%;
+                 }
+             }
+         }
+     }
+
+ }
+
+ @media(max-width:1440px) {
+     .hero-container {
+         padding: 60px 5.5555% 150px 5.5555%;
+         gap: 50px;
+         .img-container {
+             margin-top: 150px;
+             width: 48.55%;
+         }
+
+         .right-section {
+             width: 48.55%;
+             gap: 50px;
+             margin-top: 200px;
+
+             .titles-container {
+                 .mini-title {
+                     font-family: "Outfit", sans-serif;
+                     font-size: 18px;
+                 }
+
+                 .Luna-title {
+                     gap: 20px;
+
+                     h1 {
+                         font-size: 40px;
+                     }
+
+                     p {
+                         font-size: 16px;
+                     }
+                 }
+             }
+
+             .information {
+                 padding: 20px 40px;
+                 gap: 10px;
+
+                 .info {
+                     .title-num {
+                         font-size: 34px;
+                     }
+
+                     p {
+                         font-size: 16px;
+                     }
+                 }
+             }
+         }
+     }
+ }
+ @media(max-width:992px){
+    .hero-container{
+        padding:50px 4.1025% 80px 4.1025%;
+        gap:40px;
+        justify-content: center;
+        flex-direction: column;
+        .img-container {
+            margin-top: 150px;
+            width: 100%;
+        }
+        .right-section{
+            margin-top: 0px;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            gap:40px;
+
+            .titles-container {
+                .mini-title{
+                    width: 260px;
+                    margin: auto;
+                }
+                .Luna-title{
+                    gap: 18px;
+                    h1{
+                        font-size: 30px;
+                        text-align: center;
+                    }
+                }
+            }
+            .information{
+                padding:40px;
+                gap: 20px;
+                flex-direction: column;
+                justify-content:center ;
+                width: 100%;
+                }
+                .info{
+                    :nth-child(2),:nth-child(4){
+                        border-bottom: 2px solid var(--Gray15);}
+                    .title-num {
+                        text-align: center;
+                    }
+
+                }
+            }
+        }
+    }
+ 

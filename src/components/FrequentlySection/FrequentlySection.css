@@ -1,0 +1,56 @@
+.frequently-section {
+    padding: 0px 8.4375% 200px 8.4375%;
+}
+    .frequently-title {
+        margin-bottom: 100px;
+    }
+
+
+.accordion-contain {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 50px;
+}
+    .occordion,.Accordion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        gap: 30px;
+    }
+
+
+
+@media(max-width:1440px) {
+    .frequently-section {
+        padding: 150px 5.5555% 150px 5.5555%;
+    }
+        .accordion-contain {
+            gap: 40px;
+        }
+            .occordion , .Accordion{
+                gap: 24px;
+            }
+        }
+
+@media(max-width:992px) {
+    .frequently-section {
+        padding: 80px 4.1025% 80px 4.1025%;
+    }
+
+    .accordion-contain {
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .occordion,
+    .Accordion {
+        gap: 20px;
+        width: 100%;
+    }
+}
+    
+

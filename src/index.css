@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Colors */
+:root{
+  --VeryLightOrange:#FFF5F0;
+  --LightOrange: #FFDECC;
+  --Orange95:#FFEFE5;
+  --Orange80:#FFBE99;
+  --Orange97:#FFF5F0 ;
+  --Orange65:#FF8D4D;
+  --Orange75:#FFAE80;
+  --White:#FFFFFF;
+  --Gray10:#1A1A1A;
+  --Gray15:#262626;
+  --Gray20:#333333;
+  --Gray30:#4C4C4D;
+  --Gray40:#656567;
+  --Black:#000000;
+}
+body{
+  background-color: var(--VeryLightOrange);
+}

@@ -1,0 +1,7 @@
+.pad{
+  width: 100%;
+  padding: 18px 2.6041% 80px 2.6041%;
+  position: fixed;
+  top: 0px;
+  z-index: 10000;
+}

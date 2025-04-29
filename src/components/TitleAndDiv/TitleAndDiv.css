@@ -1,0 +1,86 @@
+.Lq-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 19px;}
+
+    .rectangle {
+        outline: 2px solid var(--Black);
+        border-radius: 8px;
+        background-color: var(--White);
+        padding: 10px 20px;}
+
+        .baio {
+            font-size: 18px;
+            font-family: "Outfit", sans-serif;
+            font-weight: 500;
+            line-height: 150%;
+            color: var(--Gray20);}
+       
+    .h2-title {
+        text-align: center;
+        font-family: "Raleway", sans-serif;
+        font-size: 58px;
+        font-weight: 700;
+        line-height: 130%;
+        color: var(--Gray10);
+    }
+
+    .exp-design {
+        font-family: "Outfit", sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 150%;
+        text-align: center;
+        width: 63%;
+
+    }
+
+    @media(max-width:1440px) {
+        .Lq-container {
+            width: 100%;
+            gap: 14px;}
+
+            .rectangle {
+                padding: 8px 14px;
+            }
+
+                .baio {
+                    font-size: 16px;
+                }
+                .h2-title {
+                    font-size: 48px;
+                }
+    
+                .exp-design {
+                    font-size: 16px;
+                    width: 73%;
+                }
+            }
+
+        
+    
+
+    @media(max-width:992px) {
+        .Lq-container {
+            width: 100%;
+            gap: 10px;
+
+            .rectangle {
+                .baio {
+                    font-size: 14px;
+                }
+            }
+
+            .h2-title {
+                font-size: 38px;
+            }
+
+            .exp-design {
+                width: 100%;
+                text-align: center;
+
+            }
+        }
+    }

@@ -1,0 +1,107 @@
+.nav-border {
+    outline: 2px solid var(--Gray15);
+    border-radius: 12px;
+    background-color: var(--White);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    }
+    .logo-container {
+        padding: 20px 24px;
+        width: 230.69px;
+        border-right: 2px solid var(--Gray15);
+        background-color: var(--Orange65);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .btn-container{
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+            .nav-btn {
+                height: 80px;
+                border: 0px;
+                border-left: 2px solid var(--Gray15);
+                background-color: transparent;
+                padding:25px 34px;
+        }
+    .nav-btn a ,.nav-btn2 a{
+        text-decoration: none;
+        color: var(--Gray15);
+        font-family: "Outfit", sans-serif;
+        font-size: 20px;
+      font-weight: 500;
+}
+  
+button:nth-child(1){
+    background-color: var(--Orange95);   
+}
+button:nth-child(6){
+    background-color: var(--Orange65);   
+}
+.burger-menu{
+        padding: 16px 30px;
+        border: none;
+        border-left: 2px solid var(--Gray15);
+        background-color: var(--Orange65);
+        display: none;
+        justify-content: center;
+        align-items: center;
+
+    }.btn-container2{
+        border:2px solid var(--Gray15);
+        width: 95vw;
+        background-color: var(--LightOrange);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        position:absolute;
+        right: 0px;
+        top:73px;
+    }.nav-btn2 ,.close{
+        width: 100%;
+        padding: 20px;
+        border: none;
+        border-bottom:2px solid var(--Gray15);
+        background-color: transparent;
+    }.close{
+        display: none;
+        font-family: "Outfit", sans-serif;
+        font-size: 20px;
+      font-weight: 500;
+      color: var(--Gray15);
+    }
+@media(max-width:1440px){
+    .nav-btn ,.nav-btn2{
+        padding:16px 30px;
+    }
+    .nav-btn a{
+        font-size: 16px;}
+        .nav-btn2 a{
+            font-size: 20px;
+        }
+}.logo-container{
+    padding: 16px 20px;
+    width: 195.29px;
+    height:80px;
+}
+
+@media(max-width:992px){
+    .logo-container{
+        width: 177.02px;
+    }
+    .btn-container{
+        display: none;
+    }.burger-menu{
+display: flex;
+height: 80px;
+    }.close{
+        display: block;
+    }
+}

@@ -1,0 +1,230 @@
+.history-section{
+    padding: 0px  8.4375% 200px 8.4375%
+}
+.history-container{
+ border:2px solid var(--Gray15);
+ border-radius: 12px;
+ background-color: var(--White);
+ padding: 150px;
+
+ 
+}
+.history-section-title{
+margin-bottom: 100px;
+}
+ .time-line-pattern{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    gap: 100px;
+    ::before{
+        content: "";
+        position: absolute;
+        left: -6%;
+        top:7.5%;
+        width:5px;
+        height: 85%;
+         border-left: 2px solid var(--Black); 
+       background-color: var(--Orange80);
+        display: block;
+       
+    }
+    
+}
+.time-line-circle,.time-line-circle2,.time-line-circle3,.time-line-circle4,.time-line-circle5 , .time-line-circle6,.time-line-circle7,.time-line-circle8{
+    width: 20px;
+    height: 20px;
+    border:2px solid var(--Gray15);
+    background-color: var(--White);
+    border-radius: 50%;
+    position: absolute;
+    top: 7.4%;
+    left: -6.6%;
+   z-index: 2;
+}
+
+.time-line-circle5,.time-line-circle6{
+    top: 63%;
+}
+
+.time-line-circle3,.time-line-circle4{
+    top: 35%;
+    left:-6.6%;
+}
+.time-line-circle2,.time-line-circle4,.time-line-circle6,.time-line-circle8{
+    left:-1.1%;
+}
+.time-line-circle7,.time-line-circle8{
+    top: 91%;
+}
+.time-line-container,.time-line-container1,.time-line-container2,.time-line-container3{
+    width: 52px;
+    padding: 6px 6px 6px 0px;
+    background-color: var(--Orange80);
+    position: absolute;
+   top: 7.5%;
+   left:-5%;
+}
+.time-line{
+    border: 1px solid var(--Black);
+    width: 48px;
+}
+
+.time-line-container1{
+   top: 35.1%;
+   left:-5%;
+}
+.time-line-container2{
+    top: 63.1%;
+}
+.time-line-container3{
+    top: 91.1%;
+}
+.box-year{
+    border: 2px solid var(--Gray15);
+    border-radius: 12px;
+    box-shadow: 6px 6px 0px 2px rgba(30, 30, 30, 1);
+    padding: 30px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width:29.957%;
+}
+.box-year p{
+    font-family: "Raleway", sans-serif;
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 130%;
+    display: block;
+}
+.history-title{
+    width: fit-content;
+} 
+.title1{
+    font-family: "Raleway", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 130%;
+}
+.title2{
+    font-family: "Outfit", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%;
+}
+.gg{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+@media(max-width:1440px){
+    .history-section{
+        padding: 0px 5.5555% 150px 5.5555%;
+    }
+    .history-container{
+        padding: 100px;
+    }
+    .history-section-title{
+        margin-bottom: 80px;
+    }
+    .time-line-pattern{
+        gap: 80px;
+    }
+    .box-year{
+        padding:24px 34px;
+    }
+    .box-year p{
+        font-size: 48px;
+    }
+    .box-year img{
+        width: 60px;
+    }
+    .title1{
+        font-size: 24px;
+    }
+    .title2{
+        font-size: 16px;
+    }
+    .gg{
+        gap: 40px;
+    }
+}
+@media(max-width:992px){
+    .history-section{
+        padding: 0px 4.1025% 80px 4.1025%;
+    }
+    .history-container{
+        padding: 50px 20px 50px 10px;
+    }
+    .history-section-title{
+        margin-bottom: 80px;
+    }
+    .time-line-pattern{
+        gap: 80px;
+        ::before{
+            top:3%;
+            height: 83%;
+            left: 3%;
+            
+        }
+    }
+    .box-year{
+        padding:20px 24px;
+        width: 80%;
+    }
+    .box-year p{
+        font-size: 38px;
+        
+    }
+    .box-year img{
+        width: 50px;
+    }
+    .history-title{
+        padding-left: 38px;
+    }
+    .title1{
+        font-size: 22px;
+       
+    }
+    .title2{
+        font-size: 16px;
+       
+    }
+   
+    .gg{
+        gap: 30px;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+    .time-line-circle,.time-line-circle2,.time-line-container{
+        top:3%;
+    }
+    .time-line-container,.time-line-container1,.time-line-container2,.time-line-container3{
+        left:3%;
+    }
+    .time-line-circle,.time-line-circle3,.time-line-circle5,.time-line-circle8{
+        left:9%;
+    }
+    .time-line-circle2,.time-line-circle4,.time-line-circle6,.time-line-circle7{
+        left: 2%;
+    }
+    .time-line-circle3,.time-line-circle4,.time-line-container1{
+        top:31.2%
+    }
+    .time-line-circle5,.time-line-circle6,.time-line-container2{
+        top:57%;
+    }
+    .time-line-circle7,.time-line-circle8,.time-line-container3{
+        top: 85%;
+    }
+    .time-line{
+        width: 41px;
+    }
+
+}

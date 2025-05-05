@@ -4,6 +4,7 @@
         margin-bottom: 100px;
     }
 }
+
 @media(max-width:1440px){
     .testimonails-container{
         padding: 150px 5.5555% 150px 5.5555%;

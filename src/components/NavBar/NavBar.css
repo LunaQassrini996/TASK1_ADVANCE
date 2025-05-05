@@ -17,7 +17,45 @@
         align-items: center;
 
     }
-    .btn-container{
+    .nav-item{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        
+        
+    }
+    .nav-item li{
+                height: 80px;
+                border: 0px;
+                border-left: 2px solid var(--Gray15);
+                background-color: transparent;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+    }
+        .nav-item li a , .nav-item2 li a{
+            text-decoration: none;
+            color: var(--Gray15);
+            font-family: "Outfit", sans-serif;
+            font-size: 20px;
+           font-weight: 500;
+           padding:25px 34px ; 
+          text-align: center;
+           height: 100%; 
+        }
+    .nav-item li:nth-child(6){
+        background-color: var(--Orange65);   
+    }
+    .Active { 
+        text-align: center;
+        background-color: var(--LightOrange);
+        
+    }
+   
+    
+    /* .btn-container{
         display: flex;
         justify-content: center;
         align-items: end;
@@ -28,18 +66,8 @@
                 border-left: 2px solid var(--Gray15);
                 background-color: transparent;
                 padding:25px 34px;
-        }
-    .nav-btn a ,.nav-btn2 a{
-        text-decoration: none;
-        color: var(--Gray15);
-        font-family: "Outfit", sans-serif;
-        font-size: 20px;
-      font-weight: 500;
-}
-  
-button:nth-child(1){
-    background-color: var(--Orange95);   
-}
+        } */
+ 
 button:nth-child(6){
     background-color: var(--Orange65);   
 }
@@ -52,9 +80,9 @@ button:nth-child(6){
         justify-content: center;
         align-items: center;
 
-    }.btn-container2{
+    }.nav-item2{
         border:2px solid var(--Gray15);
-        width: 95vw;
+        width: 93vw;
         background-color: var(--LightOrange);
         display: flex;
         flex-direction: column;
@@ -63,29 +91,26 @@ button:nth-child(6){
         gap: 20px;
         position:absolute;
         right: 0px;
-        top:73px;
-    }.nav-btn2 ,.close{
-        width: 100%;
-        padding: 20px;
-        border: none;
-        border-bottom:2px solid var(--Gray15);
-        background-color: transparent;
-    }.close{
+        top:80px;
+        list-style-type: none;
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+   
+    .close{
         display: none;
         font-family: "Outfit", sans-serif;
         font-size: 20px;
       font-weight: 500;
+      padding: 10px 20px;
+      background-color: var(--Orange65);
+      border-radius: 8px;
       color: var(--Gray15);
     }
 @media(max-width:1440px){
-    .nav-btn ,.nav-btn2{
-        padding:16px 30px;
+    .nav-item li a , .nav-item2 a{
+        font-size: 16px;  
     }
-    .nav-btn a{
-        font-size: 16px;}
-        .nav-btn2 a{
-            font-size: 20px;
-        }
 }.logo-container{
     padding: 16px 20px;
     width: 195.29px;
@@ -96,12 +121,18 @@ button:nth-child(6){
     .logo-container{
         width: 177.02px;
     }
-    .btn-container{
+    .nav-item{
         display: none;
-    }.burger-menu{
-display: flex;
-height: 80px;
-    }.close{
+    }
+    .burger-menu{
+    display: flex;
+    height: 80px;
+    }
+    .close{
         display: block;
+    }
+     .Active:hover{
+        color: var(--Orange65);
+        padding: 0px;
     }
 }

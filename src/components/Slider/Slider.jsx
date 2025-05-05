@@ -1,11 +1,15 @@
 import './Slider.css'
-import SlideCard from '../SlideCard/SlideCard'
+
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
-import { DataCard } from '../../Data/DataCard';
+
 import { useEffect, useState } from 'react';
-export default function Slider() {
+
+
+export default function Slider({Card,data,PrevBtn1,NextBtn1}) {
     const [CurrentIndex,setCurrentIndex]= useState(0)
     const[CardsPerSlide,setCardsPerSlide]=useState(3)
+
+   
 useEffect(()=>{
   const update =() =>{
     if(window.innerWidth <= 992){
@@ -21,27 +25,25 @@ useEffect(()=>{
 
 
 const HandlePrev=()=>{
-  setCurrentIndex((prev) => Math.max(prev - 1,0));
+  setCurrentIndex((prev) => prev - 1);
 };
 
 const HandleNext=()=>{
-  const MaxIndex = DataCard.length -CardsPerSlide;
-  setCurrentIndex((prev) => Math.min(prev + 1,MaxIndex));
+  // const MaxIndex = data.length -CardsPerSlide;
+  setCurrentIndex((prev) => prev + 1);
 };
 
   return (
   <>
-  <section className='slider-container'>
-    
-       
+  <section className='slider-container'>   
     <div className='slider-body'>
       {
-        DataCard.slice(CurrentIndex,CurrentIndex+CardsPerSlide).map((item)=>(
-        <SlideCard key={item.id} photo={item.photo} name={item.name} star={item.star} profileInfo={item.profileInfo}/>
+        data.slice(CurrentIndex,CurrentIndex+CardsPerSlide).map((item)=>(
+        <Card key= {item.id} {...item} /> 
          ))}
     </div>
-    <button className='prev-btn' onClick={HandlePrev} disabled={CurrentIndex===0}><GoArrowLeft /></button>
-       <button className='next-btn' onClick={HandleNext} disabled={CurrentIndex+3>=DataCard.length - CardsPerSlide}><GoArrowRight /></button>
+    <button className={`prev-btn  ${PrevBtn1}`}  onClick={HandlePrev} disabled={CurrentIndex===0}><GoArrowLeft /></button>
+    <button className={`prev-btn ${NextBtn1}`} onClick={HandleNext} disabled={CurrentIndex+CardsPerSlide >= data.length }><GoArrowRight /></button>
   </section>
   </>
   )

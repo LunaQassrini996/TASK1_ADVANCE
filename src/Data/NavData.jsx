@@ -1,26 +1,26 @@
 export const NavItems=[
     { 
         NavLink: "Home",
-        linke:"#"
+        linke:"/",
     },
     {
         NavLink:"About Us",
-        linke:"#navigate"
+        linke:"/about",
     },
     {
         NavLink:"Academics",
-        linke:"#navigate"
+        linke:"/academics",
     },
     {
         NavLink:"Admissions",
-        linke:"#navigate"
+        linke:"/admissions",
     },
     {
         NavLink:"Student Life",
-        linke:"#navigate"
+        linke:"/student life",
     },
     {
         NavLink:"Contact",
-        linke:"#f"
+        linke:"/contact",
     }
 ]

@@ -1,0 +1,76 @@
+.mission-card{
+    width: 48.123%;
+    border: 2px solid var(--Gray15);
+    border-radius: 12px;
+    padding: 60px;
+    box-shadow: 6px 6px 0px 2px rgba(30, 30, 30, 1);
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+     gap: 60px; 
+   
+}
+.photo-icon{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-mission-desc{
+    font-family: "Outfit", sans-serif;
+    color: var(--Gray20);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%;
+    min-height: 150px;
+    width:100%;
+    
+}
+.title-size{
+    font-family: "Raleway", sans-serif;
+    color: var(--Gray10);
+    font-size: 48px;
+    font-weight: 700px;
+    line-height: 130%;
+}
+
+@media(max-width:1440px){
+    .mission-card{
+        padding: 50px;
+         gap: 50px;
+        width: 55%;
+    }
+    .title-size{
+        font-size: 38px;
+        text-align: start;
+    }
+     .photo-icon:nth-child(2){
+        width: 60.43px;
+    } 
+    .card-mission-desc{
+        font-size: 16px;
+        min-height:120px;
+    }
+}
+@media(max-width:992px){
+    .mission-card{
+        padding: 40px;
+         gap: 40px;
+        width: 100%;
+    }
+    .title-size{
+        font-size: 30px;
+        text-align: start;
+    }
+     .photo-icon:nth-child(2){
+        width: 50.36px;
+    } 
+    .card-mission-desc{
+        font-size: 16px;
+        min-height:216px;
+    }
+
+}

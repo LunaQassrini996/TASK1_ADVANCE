@@ -5,7 +5,7 @@ import { FooterSocialMedia } from "../../Data/FooterSocialMedia";
 export default function Footer() {
   return (
     <>
-      <section className="footer-section" id="f">
+      <section className="footer-section">
         <div className="footer-container">
           <div className="top-section">
             <div className="first-column">

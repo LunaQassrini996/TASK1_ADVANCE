@@ -1,0 +1,35 @@
+.special-feature{
+    margin-top: 20px;
+    padding:0px 8.4375% 200px 8.4375%;
+}
+    .special-title{
+        margin-bottom: 100px;
+    
+    }
+ .top-card-row{
+    display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+ } 
+ .top-margin{
+    margin-bottom: 70px;
+ }   
+ 
+ @media (max-width:1440px){
+    .special-feature{
+        padding: 0px 5.5555% 150px 5.5555%;
+    }
+}
+@media (max-width:992px){
+    .special-feature{
+        padding: 0px 4.1025% 80px 4.1025%;
+        
+        
+    }.top-card-row{
+        width: 100%;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        gap: 60px;
+    }
+}

@@ -1,0 +1,42 @@
+.awards-section{
+    padding: 0px  8.4375% 200px 8.4375%;
+    position: relative;
+}
+.awards-title{
+    margin-bottom: 100px;
+}
+.shape-paraghraph{
+    position: absolute;
+    bottom: 9%;
+    font-family: "Raleway", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 130%;
+}
+@media(max-width:1440px){
+    .awards-section{
+        padding: 0px 5.5555% 150px 5.5555%;
+    }
+    .shape-paraghraph{
+        font-size: 18px;
+        bottom: 8%;
+       
+    }
+   
+    .awards-title{
+        margin-bottom: 80px;
+    }
+}
+
+@media(max-width:992px){
+    .awards-section{
+        padding: 0px 4.1025% 80px 4.1025%;
+        
+    }
+    .awards-title{
+        margin-bottom: 50px;
+    }
+    .shape-paraghraph{
+        bottom: 5%;
+    }
+}

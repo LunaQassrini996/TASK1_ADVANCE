@@ -1,0 +1,52 @@
+
+.image-slider-container{
+    border: 2px solid var(--Gray15);
+    border-radius: 12px;
+    padding: 200px 50px 50px 50px;
+    background-color: var(--White);
+    position: relative;
+}
+.btn-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.image-lq-title{
+    font-family: "Raleway", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 130%;
+}
+.control-btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.left-btn , .right-btn{
+    width: 58px;
+    height: 58px;
+    padding: 13px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--Gray20);
+    border-radius: 8px;
+    background-color: var(--White);
+}
+ .images-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    position: absolute;
+    top: -50%;
+    left: 0;
+    
+   
+} 
+.photo-slider{
+    width:21.65%;
+}

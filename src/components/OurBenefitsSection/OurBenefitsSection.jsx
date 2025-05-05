@@ -7,12 +7,14 @@ import { HiMiniFlag } from "react-icons/hi2";
 import { RiFootballFill } from "react-icons/ri";
 import { RiParentFill } from "react-icons/ri";
 import'./OurBenefitsSection.css'
+import Button from "../Button/Button";
 export default function OurBenefitsSection() {
   return (
     <>
     <section className="Benefit-container">
         <div className="title-baio">
-          <TitleAndDiv Baio="Children Deserve Bright Future" LqTitle="Our Benefits" explain="With a dedicated team of experienced educators, state-of-the-art facilities, and a comprehensive curriculum, we aim to lay a strong foundation for your child's future." />
+           <Button Baio="Children Deserve Bright Future"/>
+          <TitleAndDiv show={true} LqTitle="Our Benefits" explain="With a dedicated team of experienced educators, state-of-the-art facilities, and a comprehensive curriculum, we aim to lay a strong foundation for your child's future." />
         </div>
     
       

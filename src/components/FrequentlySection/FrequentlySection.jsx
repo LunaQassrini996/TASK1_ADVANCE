@@ -3,6 +3,7 @@ import FrequentlyItem from "../FrequentlyItem/FrequentlyItem";
 import TitleAndDiv from "../TitleAndDiv/TitleAndDiv";
 import { useState } from "react";
 import { Data } from "../../Data/OccordionData";
+import Button from "../Button/Button";
 export default function FrequentlySection() {
   const [OpenOccordion, setOpenOccordion] = useState(null);
   const HandleOccordionWithId = (id) => {
@@ -13,8 +14,9 @@ export default function FrequentlySection() {
     <>
       <section className="frequently-section">
         <div className="frequently-title">
+        <Button Baio="Solutions For The Doubts"/>
           <TitleAndDiv
-            Baio="Solutions For The Doubts"
+            show={true}
             LqTitle="Frequently Asked Questions"
             explain="Find all the essential information you need in our FAQ section, designed to address the most frequently asked questions and help you make informed decisions for your child's education."
           />

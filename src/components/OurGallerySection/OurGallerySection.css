@@ -1,0 +1,17 @@
+.gallery-section{
+    padding: 0px 8.4375% 200px 8.4375%;
+}
+.gallery-title{
+    margin-bottom: 100px;
+}
+
+.tabs-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 200px;
+}
+.Lq-active{
+    background-color: var(--Orange80);
+}

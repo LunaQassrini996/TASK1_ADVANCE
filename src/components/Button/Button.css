@@ -1,0 +1,38 @@
+.btn-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 14px;
+}
+.rectangle {
+    outline: 2px solid var(--Black);
+    border-radius: 8px;
+    background-color: var(--White);
+    padding: 10px 20px;
+    width: max-content;
+}
+
+.baio {
+    font-size: 18px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--Gray20);
+}
+
+@media(max-width:1440px) {
+    .rectangle {
+        padding: 8px 14px;
+    }
+
+    .baio {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:992px) {
+
+    .baio {
+        font-size: 14px;
+    }
+}
